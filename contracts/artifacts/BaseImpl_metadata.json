@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.21+commit.d9974bed"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getAlias",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/AbstractDemo.sol": "BaseImpl"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/AbstractDemo.sol": {
+			"keccak256": "0x5dafe5aa9e757fada416c0483e36f4bac766ffd52b201fe4aedeafa6f264de3a",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://ac52c547db7ade779699601ae824e61f8c9789472245630d7e49a721a36859d1",
+				"dweb:/ipfs/QmaZ2KRB89qZ5mcsnfFXpBb6mEKG9fQN1HV7YtmaYmHZfQ"
+			]
+		}
+	},
+	"version": 1
+}
