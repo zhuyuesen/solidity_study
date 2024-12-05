@@ -7,6 +7,7 @@ contract ReceiveETH {
     event Log(uint amount, uint gas);
     
     // receive方法，接收eth时被触发
+    // gasleft() 返回当前执行上下文中剩余的 gas 量
     receive() external payable{
         emit Log(msg.value, gasleft());
     }
@@ -30,5 +31,26 @@ contract sendEth{
      // 返回合约ETH余额
     function getBalance() view public returns(uint) {
         return address(this).balance;
+    }
+
+    // 用send发送
+    // error sendFailed();
+
+    // function sendETH(address payable _to, uint256 amount) external payable {
+    //     bool success = _to.send(amount);
+    //     if(!success){
+    //         revert sendFailed();
+    //     }
+    // }
+
+    error SendFailed(); // 用send发送ETH失败error
+
+    // send()发送ETH
+    function sendETH(address payable _to, uint256 amount) external payable{
+        // 处理下send的返回值，如果失败，revert交易并发送error
+        bool success = _to.send(amount);
+        if(!success){
+            revert SendFailed();
+        }
     }
 }

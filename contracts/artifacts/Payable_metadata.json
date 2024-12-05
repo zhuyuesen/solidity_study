@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.21+commit.d9974bed"
+		"version": "0.8.26+commit.8a97fa7a"
 	},
 	"language": "Solidity",
 	"output": {
@@ -12,17 +12,32 @@
 			},
 			{
 				"inputs": [],
-				"name": "SendFailed",
-				"type": "error"
-			},
-			{
-				"inputs": [],
-				"name": "getBalance",
+				"name": "amount",
 				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -37,36 +52,21 @@
 					},
 					{
 						"internalType": "uint256",
-						"name": "amount",
+						"name": "_amount",
 						"type": "uint256"
 					}
 				],
-				"name": "sendETH",
+				"name": "transfer",
 				"outputs": [],
-				"stateMutability": "payable",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address payable",
-						"name": "_to",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
-					}
-				],
-				"name": "transferETH",
+				"inputs": [],
+				"name": "widthDraw",
 				"outputs": [],
-				"stateMutability": "payable",
+				"stateMutability": "nonpayable",
 				"type": "function"
-			},
-			{
-				"stateMutability": "payable",
-				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -82,9 +82,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/sendEth.sol": "sendEth"
+			"contracts/Payable.sol": "Payable"
 		},
-		"evmVersion": "shanghai",
+		"evmVersion": "cancun",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -96,12 +96,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/sendEth.sol": {
-			"keccak256": "0x39e339b782743bf115e04c3bb6adcf4cf3ff16b70d390b9d1501692b83aa59d8",
+		"contracts/Payable.sol": {
+			"keccak256": "0xa94788d69a76f651135eb87c460c4a72f1e7fbb59b5e24b63e15585e35b31ddd",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://332b5c25c679ddeedc304b8fbf534d8f8d5621645de21763fcf87416148f5362",
-				"dweb:/ipfs/QmdxzrmJYZxX9dXHCDdmwawYzbxvt8vJ5Q6qZRD5NUTh9k"
+				"bzz-raw://c7a58eda9a6c6e40c0dfa918ec022935035df8b5c7b0aa5f058560a316d719fd",
+				"dweb:/ipfs/Qmb8bMrAAtufL514Ez2z1dHAwReAD4qTYzjueTJhVwX3iQ"
 			]
 		}
 	},

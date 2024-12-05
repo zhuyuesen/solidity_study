@@ -1,32 +1,19 @@
 {
 	"compiler": {
-		"version": "0.8.21+commit.d9974bed"
+		"version": "0.8.26+commit.8a97fa7a"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
-				"anonymous": false,
 				"inputs": [
 					{
-						"indexed": false,
 						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
-					},
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "gas",
+						"name": "x",
 						"type": "uint256"
 					}
 				],
-				"name": "Log",
-				"type": "event"
-			},
-			{
-				"inputs": [],
-				"name": "getBalance",
+				"name": "foo",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -34,12 +21,27 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
+				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
-				"stateMutability": "payable",
-				"type": "receive"
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_x",
+						"type": "uint256"
+					}
+				],
+				"name": "ternary",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -55,9 +57,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/sendEth.sol": "ReceiveETH"
+			"contracts/ifelse.sol": "Ifelse"
 		},
-		"evmVersion": "shanghai",
+		"evmVersion": "cancun",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -69,12 +71,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/sendEth.sol": {
-			"keccak256": "0x39e339b782743bf115e04c3bb6adcf4cf3ff16b70d390b9d1501692b83aa59d8",
+		"contracts/ifelse.sol": {
+			"keccak256": "0x7de25b1cf8870231b23c2e456b0a87652b987b3eb089f2e2f44f0809e862d8f9",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://332b5c25c679ddeedc304b8fbf534d8f8d5621645de21763fcf87416148f5362",
-				"dweb:/ipfs/QmdxzrmJYZxX9dXHCDdmwawYzbxvt8vJ5Q6qZRD5NUTh9k"
+				"bzz-raw://497672876161d1e155c19ba6d415e946d6e7a3c1453b650781f7685ce4c860cb",
+				"dweb:/ipfs/QmWAZLpoWK9yaAK9Ao3YC9BNwvdE6snjbViNiZqCFmySLZ"
 			]
 		}
 	},

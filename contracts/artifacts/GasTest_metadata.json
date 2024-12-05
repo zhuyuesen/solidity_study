@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.21+commit.d9974bed"
+		"version": "0.8.26+commit.8a97fa7a"
 	},
 	"language": "Solidity",
 	"output": {
@@ -11,22 +11,23 @@
 					{
 						"indexed": false,
 						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
-					},
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "gas",
+						"name": "val",
 						"type": "uint256"
 					}
 				],
-				"name": "Log",
+				"name": "log",
 				"type": "event"
 			},
 			{
 				"inputs": [],
-				"name": "getBalance",
+				"name": "forever",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "i",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -36,10 +37,6 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
-			},
-			{
-				"stateMutability": "payable",
-				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -55,9 +52,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/sendEth.sol": "ReceiveETH"
+			"contracts/gasTest.sol": "GasTest"
 		},
-		"evmVersion": "shanghai",
+		"evmVersion": "cancun",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -69,12 +66,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/sendEth.sol": {
-			"keccak256": "0x39e339b782743bf115e04c3bb6adcf4cf3ff16b70d390b9d1501692b83aa59d8",
+		"contracts/gasTest.sol": {
+			"keccak256": "0x1f804e801c22c0d03cef03b97d7f2ff2a41d0d88c93e883ebb149ad0c8320b62",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://332b5c25c679ddeedc304b8fbf534d8f8d5621645de21763fcf87416148f5362",
-				"dweb:/ipfs/QmdxzrmJYZxX9dXHCDdmwawYzbxvt8vJ5Q6qZRD5NUTh9k"
+				"bzz-raw://5275cef9ae74ac39ec9370078d05ba1e38e3240494d49a0ebfbb6b056dc83661",
+				"dweb:/ipfs/QmUErnM9eHMH8ysjsnzgKawVeQqDRRzHbX5UxY4TEpuwXy"
 			]
 		}
 	},
